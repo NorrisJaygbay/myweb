@@ -1,0 +1,1028 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: rgba(0, 0, 0, 0.2);
+}
+#bothheader{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+/* firstheader */
+#firstheadercontrol1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background:rgba(0,0,0,.9);
+    height: 50px;
+}
+#firstheadercallicon{
+    cursor: pointer;
+}
+#firstheadercallicon1{
+    display: none;
+    width: 300px;
+    height: 110px;
+    background: rgba(0,0,0,1);
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+#firstheadercallicon1 button{
+    color: red;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+#firstheadercallicon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+#firstheadercallicon2 ul{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 10px;
+}
+#firstheadercallicon2 ul li:first-child{
+    padding-bottom: 5px;
+}
+#firstheadercallicon2 ul li a:hover{
+    color: #03A9F4;
+    border-bottom: 1px dotted #03A9F4;
+}
+#firstheadercallicon2 ul li a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    transition: .5s ease;
+    color: rgba(255,255,255,.8);
+}
+#firstheadercontrol2{
+    display: flex;
+}
+#firstheadercontrol2 a{
+    color: rgba(255,255,255,.8);
+}
+#firstheadera{
+    letter-spacing: 1px;
+    margin-left: 5px;
+    text-decoration: none;
+    transition: .5s ease;
+}
+#firstheadera:hover{
+    color: #03A9F4;
+    border-bottom: 1px dotted #03A9F4;
+}
+#firstheaderimg{
+    display: flex;
+    align-items: center;
+}
+#firstheader2a ol{
+    list-style: none;
+    padding-left: 0;
+}
+#firstheadercontrol22{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+#firstheadercontrol3{
+    display: flex;
+    align-items: center;
+}
+#firstheadercontrol3 ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#firstheadercontrol3 ul li{
+    padding-left: 8px;
+    padding-right: 8px;
+    transition: .3s ease;
+}
+#firstheadercontrol3 ul li:hover{
+    border-bottom: 2px dotted #03A9F4;
+}
+/* firstheader @media */
+@media all and (max-width:680px){
+    #firstheader2a ol{
+        display: none;
+    }
+    #firstheadera{
+        display: none;
+    }
+    #firstheadercontrol22{
+        padding: 0 5px;
+    }
+    #firstheaderimg{
+        transition: .5s ease;
+    }
+    #firstheaderimg:hover{
+        border-bottom: 2px dotted #03A9F4;
+    }
+    #firstheadercallicon{
+        transition: .5s ease;
+    }
+    #firstheadercallicon:hover{
+        border-bottom: 2px dotted #03A9F4;
+    }
+}
+/* firstheader styling ends here */
+/* secondheader */
+header{
+    background:linear-gradient(to right, white,white,rgba(3,169,244,1)), white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-top: 1px solid #03A9F4;
+    /* border-bottom: 4px solid #03A9F4; */
+    box-shadow: 0px 3px 15px rgba(3, 169,244,.5);
+}
+.navbar{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+.navlogo{
+    display: flex;
+    align-items: center;
+}
+.navlogo h2{
+    margin-left: 5px;
+    font-weight: 900;
+}
+.navlogo h2:before{
+    content: "";
+    animation: ami infinite 10s;
+}
+@keyframes ami{
+    0%{
+        content: 'AIIST';
+        color: red;
+    }
+    50%{
+        content: 'AIIST';
+        color: blue;
+    }
+    100%{
+        content: 'AIIST';
+        color:red;
+    }
+}
+.nav-menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.nav-menu-close{
+    color: red !important;
+    font-size: 2rem !important;
+    font-weight: 900;
+    display: none;
+}
+#home2{
+    display: none;
+}
+.nav-menu li{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: .7s ease;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: blue;
+    transition: 0.5s ease;
+    font-size: 1.3rem;
+}
+.nav-menu li a:hover{
+    color: #03A9F4;
+}
+.nav-menu li:hover{
+    /* border-bottom: 1px dotted blue; */
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+    padding: 2px 10px; 
+    transition: .5s ease;
+}
+.bar{
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
+    background: blue;
+}
+/* for the pupup I.T. courses */
+.itcourses{
+    /* position: absolute; */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    /* top: 0; */
+}
+.itcourses1{
+    width: 30%;
+    color: #03A9F4;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 10px 10px 10px rgba(255,255,255,.8);
+    background: rgba(0,0,0,1);
+}
+.itcourses1 ul{
+    list-style: none;
+}
+.itcourses1 ul li{
+    padding: 5px;
+    font-size: 1.2rem;
+}
+.itcourses1 ul li:before{
+    content: "\27A4";
+    margin-right: 5px;
+}
+.itcourses1 ul li a{
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
+    transition: .5s ease;
+}
+.itcourses1 ul li a:hover{
+    color: #03A9F4;
+}
+.itcourses2{
+    margin-bottom: -20px;
+    margin-top: -10px;
+    text-align: end;
+}
+.itcourses3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    color: red;
+    background: transparent;
+    cursor: pointer;
+}
+/* for the pupup I.T. courses ends here */
+
+/* @media for I.T.courses */
+@media all and (max-width:840px){
+    .itcourses1{
+        width: 40%;
+    }
+}
+@media all and (max-width:640px){
+    .itcourses1{
+        width: 60%;
+    }
+}
+@media all and (max-width:450px){
+    .itcourses1{
+        width: 70%;
+    }
+}
+@media all and (max-width:370px){
+    .itcourses1{
+        width: 80%;
+    }
+}
+@media all and (max-width:320px){
+    .itcourses1{
+        width: 90%;
+    }
+}
+/* @media for I.T.courses ends here*/
+
+/* for the pupup business courses */
+.business{
+    /* position: absolute; */
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    display: none;
+    justify-content: center;
+
+}
+.business1{
+    width: 30%;
+    color: #03A9F4;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0px 10px 10px 10px rgba(255,255,255,.8);
+    background: rgba(0,0,0,1);
+}
+.business1 ul{
+    list-style: none;
+}
+.business1 ul li:before{
+    content: "\27A4";
+    /* color: red; */
+    margin-right: 5px;
+    /* left: 10px;
+    top: 20; */
+}
+.business1 ul li{
+    padding: 5px;
+    font-size: 1.2rem;
+}
+.business1 ul li a{
+    text-decoration: none;
+    color: rgba(255,255,255,.8);
+    transition: .5s ease;
+}
+.business1 ul li a:hover{
+    color: #03A9F4;
+}
+.business2{
+    margin-bottom: -20px;
+    margin-top: -10px;
+    text-align: end;
+}
+.business3{
+    font-size: 1.5rem;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    color: red;
+    background: transparent;
+    cursor: pointer;
+}
+/* for the pupup business courses ends here */
+
+/* @media for business courses */
+@media all and (max-width:840px){
+    .business1{
+        width: 40%;
+    }
+}
+@media all and (max-width:640px){
+    .business1{
+        width: 60%;
+    }
+}
+@media all and (max-width:450px){
+    .business1{
+        width: 70%;
+    }
+}
+@media all and (max-width:370px){
+    .business1{
+        width: 80%;
+    }
+}
+@media all and (max-width:320px){
+    .business1{
+        width: 90%;
+    }
+}
+/* @media for business courses ends here*/
+
+/* @media for second nav */
+@media all and (max-width:1025px){
+    .hamburger{
+        display: block;
+    }
+    .nav-menu{
+        position: fixed;
+        left: 100%;
+        top: -20px;
+        z-index: 999;
+        display: block;
+        background: rgba(0,0,0,.9);
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+        padding-left: 0;
+    }
+    #home1{
+        display: none;
+    }
+    #home2{
+        display: block;
+        padding-bottom: 2px;
+    }
+    .nav-menu-close{
+        display: block;
+        color: red !important;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-link{
+        padding-bottom: 30px;
+    }
+    .nav-menu li{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-bottom:1px solid #03A9F4;
+    }
+    .nav-menu li:first-child{
+        border-bottom: none;
+    }  
+    .nav-menu li:last-child{
+        border-bottom: none;
+    } 
+    .nav-menu li a{
+        color: rgba(255,255,255,.8);
+    }
+}
+@media all and (max-width:500px){
+    .navbar{
+        padding: 0 40px;
+    }
+}
+@media all and (max-width:300px){
+    .navbar{
+        padding: 0 20px;
+    }
+}
+@media all and (max-width:200px){
+    .navbar{
+        padding: 0 10px;
+    }
+}
+@media all and (max-width:150px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+/* second header ends here */
+/* .maincontrol */
+.maincontro{
+    background:linear-gradient(to right, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9),rgba(0,0,0,.4)), url('Computerlab.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    margin-top: -35px;
+    padding-top: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+/* .maincontro ends here */
+/* main */
+.main{
+    padding-left: 40px;
+    padding-bottom: 40px;
+    color: rgba(255,255,255,.8);
+}
+.p1{
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.span1{
+    color: #03A9F4;
+    border-bottom: 4px solid rgba(255,255,255,.8);
+}
+.p2{
+    font-size: 3rem;
+    font-weight: 900;
+    /* color: #03A9F4; */
+    background-image: linear-gradient(to right, rgba(0,0,255,1),rgba(3,169,244,1),rgba(0,0,255,1));
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 23%;
+    letter-spacing: 5px;
+    margin-bottom: -32px;
+    margin-top: -32px;
+    /* animation: fade 5s infinite alternate; */
+}
+@keyframes fade{
+    10%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .1;
+    }
+}
+.p3{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.p4{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -32px;
+    letter-spacing: 1px;
+}
+.p5{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: blue;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgba(3,169,244,1);
+    box-shadow: 0px 3px 40px 15px rgba(255,255,255,.3);
+}
+/* main ends here */
+/* main1 */
+.main1{
+    color: rgba(255,255,255,.8);
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+/* for AIIST changing text */
+.main11{
+    text-align: center;
+    margin-bottom: -15px;
+    margin-top: -20px;
+}
+.main12{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #03A9F4;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.main12:before{
+    content: "";
+    animation: change 15s infinite;
+}
+/* end for AIIST changing text */
+/* @keyframes for AIIST changing text */
+@keyframes change{
+    0%{
+        content: "AIIST";
+        color: blue;
+    }
+    17%{
+        content: "AFRICA";
+        color: #03A9F4;
+    }
+    34%{
+        content: "INTERNATIONAL";
+        color: #03A9F4;
+    }
+    51%{
+        content: "INSTITUDE";
+        color: #03A9F4;
+    }
+    68%{
+        content: "OF SCIENCE";
+        color: #03A9F4;
+    }
+    85%{
+        content: "AND TECHNOLOGY";
+        color: #03A9F4;
+    }
+    100%{
+        content: "AIIST";
+        color: blue;
+    }
+}
+/*end of @keyframes for AIIST changing text */
+/* @media for AIIST changing text */
+@media all and (max-width:500px){
+    .main12{
+        font-size: 2.5rem;
+    }
+}
+@media all and (max-width:450px){
+    .main12{
+        font-size: 2rem;
+    }
+    .p2{
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    .p1, .p3{
+        font-size: 1.7rem;
+    }
+}
+@media all and (max-width:350px){
+    .main12{
+        font-size: 1.8rem;
+    }
+    .p2{
+        font-size: 2.2rem;
+        font-weight: 900;
+    }
+    .p1, .p3{
+        font-size: 1.5rem;
+    }
+}
+/*end of @media for AIIST changing text */
+#span2{
+    color: #03A9F4;
+    font-weight: bold;
+}
+#span3{
+    border-bottom: 4px solid rgba(255,255,255,.8);
+}
+.p7{
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+.p8{
+    font-size: 1.7rem;
+    color: #03A9F4;
+    font-weight: bold;
+    padding-bottom: 150px;
+}
+/* .main1 ends here */
+/* .main2 */
+#zoom1{
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#zoom2{
+    cursor: pointer;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+#zoom2:hover{
+    transform: scale(1.5);
+}
+.main2{
+    display: flex;
+    margin-top: -160px;
+}
+.main21{
+    display: flex;
+    width: 50%;
+}
+.main22{
+    width: 50%;
+    border: 2px solid white;
+    padding: 10px;
+    background: whitesmoke;
+    text-align: center;
+    box-shadow: 0px 3px 10px 5px rgba(255,255,255,.3);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.p9{
+    margin-top: 1px;
+    color: blue;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s ease;
+}
+.p9:hover{
+    color: #03A9F4;
+}
+#readmore{
+    text-decoration: none;
+    border-bottom: 2px dotted #03A9F4;
+    color: blue;
+    transition: .9s ease;
+}
+#readmore:hover{
+    color: red;
+    border-bottom: 2px dotted blue;
+}
+/* .main2 ends here */
+/* @media .main2 */
+@media all and (max-width:950px){
+    .main2{
+        flex-direction: column;
+    }
+/* for control of the below element */
+    #softwareeng{
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    #webdev{
+        margin-left: 0;
+    }
+/* end for control of the below element */
+    .main21{
+        width:90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .main3{
+        flex-direction: column;
+        margin-top: 0 !important;
+    }
+}
+@media all and (max-width:650px){
+    .main21{
+        flex-direction: column;
+    }
+    .main22{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    /* for control of the below element */
+    #databasetec{
+        margin:auto !important;
+    }
+    #softwareeng{
+       margin: auto !important;
+    }
+    #webdev{ 
+        margin:auto !important;
+        margin-top: 10px !important;
+    }
+    /* end of control for the below element */
+}
+@media all and (max-width:450px){
+    .main22{
+        width: 90%;
+    }
+}
+/* @media main2 ends */
+/* for control of the below element */
+#softwareeng{
+    margin-left: 0;
+    margin-right: 0;
+}
+#databasetec{
+    margin-left: 0;
+}
+/* end of control for the below element */
+/* .main3 */
+.main3{
+    margin-top: 10px;
+    display: flex;
+}
+/* .main3 ends here */
+/* footer */
+#footer{
+    background: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 2px solid rgba(255,255,255,.3);
+    padding-bottom: 30px;
+}
+#fo1, #fo2{
+    width: 50%;
+    display: flex;
+}
+/* for follow */
+#follow{
+    width: 30%;
+    text-align: center;
+}
+#follow h2{
+    color: rgba(255,255,255,.3);
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+#follow ol{
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+#follow ol li{
+    padding: 10px;
+}
+#follow ol li a:hover{
+    border-bottom: 2px dotted rgba(255,215,0,.5);
+}
+/* for form */
+#form1{
+    width: 40%;
+    font-family: sans-serif;
+    overflow: hidden;
+    color: rgba(255,255,255,.3);
+    padding: 0 10px;
+}
+#form1 h2{
+    font-size: 1.2rem;
+    margin-bottom:14px;
+    margin-top: 30px;
+}
+#form1 input{
+    width: 95%;
+    height: 30px;
+    padding-left: 10px;
+    overflow: hidden;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.3);
+    background: transparent;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,.4);
+    cursor: pointer;
+}
+#form1 textarea{
+    width: 95%;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid rgba(255,255,255,.3);
+    color: rgba(255,255,255,.4);
+    padding-left: 10px;
+    background: transparent;
+    outline: none;
+}
+#form1sub{
+    width: 101.5% !important;
+}
+/* for link */
+#link1{
+    width: 30%;
+    padding: 0px;
+    font-family: sans-serif;
+    color: rgba(255,255,255,.3);
+}
+#link1 h2{
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#link1 ol{
+    list-style-type: none;
+}
+#link1 ol li{
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+#link1 ol li a{
+    text-decoration: none;
+    border-bottom: 2px dotted rgba(255,255,255,.3);
+    color: rgba(255,215,0,.4);
+    transition: .7s ease;
+}
+#link1 ol li a:hover{
+    color: rgba(0,136,204,.7);
+}
+/* for service */
+#service{
+    width: 40%;
+    font-family: sans-serif;
+    padding: 0 10px;
+}
+#service h2{
+    color: rgba(255,255,255,.3);
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#service ol{
+    list-style-type: none;
+}
+#service ol li{
+    padding-bottom: 8px;
+}
+#service ol li a{
+    text-decoration: none;
+    color: rgba(255,215,0,.4);
+    font-weight: bold;
+    border-bottom: 2px dotted rgba(255,255,255,.4);
+    transition: .7s ease;
+}
+#service ol li a:hover{
+    color: rgba(0,136,204,.7);
+}
+/* for contact */
+#contact{
+    width: 50%;
+    font-family: sans-serif;
+    padding: 0 10px;
+}
+#contact h2{
+    color: rgba(255,255,255,.3);
+    font-size: 1.2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#contact #d1, #d2, #d3, #d4{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+#contact a{
+    color: rgba(255,255,255,.3);
+    text-decoration: none;
+    padding-left: 5px;
+    transition: .5s ease;
+}
+#contact a:hover{
+    color: rgba(0,136,204,.8);
+}
+#forwordslash{
+    color: rgba(255,215,0,.5);
+    font-weight: 900;
+    margin-left: 5px;
+}
+/* for foot */
+#foot{
+    border-top: 2px solid rgba(255,255,255,.3);
+    color: rgba(255,255,255,.3);
+    font-size: 1rem;
+    font-family: sans-serif;
+    background: black;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+#foot p{
+    padding:0 20px;
+}
+#foota{
+    text-decoration-line: none;
+    color: blue;
+    border-bottom: 2px dotted rgba(255,255,255,.8);
+    margin-left: 5px;
+    transition: .5s ease;
+}
+#foota:hover{
+    color: rgba(0,136,204,.8);
+}
+/* footer @media */
+@media all and (max-width:700px){
+    #footer{
+        flex-direction: column;
+    }
+    #fo1, #fo2{
+        width: 100%;
+    }
+    #service{
+        padding-left: 40px;
+    }
+}
+@media all and (max-width:470px){
+    #fo1, #fo2{
+        flex-direction: column;
+    }
+    #follow{
+        margin: auto;
+    }
+    #form1{
+        margin: auto;
+        width: 50%;
+    }
+    #link1{
+        margin: auto;
+        width: 50%;
+    }
+    #service{
+        margin: auto;
+        width: 50%;
+        justify-content: center;
+        padding-left: 10px;
+    }
+    #contact{
+        margin: auto;
+    }
+    #foot{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media all and (max-width:230px){
+    #d3,#d2{
+        flex-direction: column;
+    }
+}
+/* end here */
+/* for the up button */
+#up1{
+    align-self: baseline;
+    position: absolute;
+    right: 30px;
+}
+#up{
+    border: 2px solid rgba(255,215,0,.5);
+    border-radius: 50%;
+    padding: 5px;
+    color: rgba(255,215,0,.5);
+    font-size: 20px;
+    margin-top: -10px;
+    background: transparent;
+    cursor: pointer;
+    transition: .5s ease;
+}
+#up:hover{
+    color: rgba(0,136,204,.6);
+    border: 2px solid rgba(0,136,204,.6);
+}
+/* ends here */
+
