@@ -386,6 +386,23 @@ header{
 /* @media for business courses ends here*/
 /* @media for second nav */
 @media all and (max-width:1025px){
+    .navbar{
+        /* display: flex;
+        min-height: 70px;
+        justify-content: space-between;
+        align-items: center; */
+        padding: 0 50px;
+    }
+}
+@media all and (max-width:887px){
+    .navbar{
+        padding: 0 20px;
+    }
+}
+@media all and (max-width:819px){
+    .navbar{
+        padding: 0 80px;
+    }
     .hamburger{
         display: block;
     }
@@ -885,9 +902,12 @@ header{
     list-style-type: none;
     justify-content: center;
     align-items: center;
+
 }
 #follow ol li{
     padding: 10px;
+    margin-left: -50px;
+
 }
 #follow ol li a:hover{
     border-bottom: 2px dotted rgba(255,215,0,.5);
@@ -904,6 +924,8 @@ header{
     font-size: 1.2rem;
     margin-bottom:14px;
     margin-top: 30px;
+    text-align: center;
+
 }
 #form1 input{
     width: 95%;
@@ -941,6 +963,7 @@ header{
     font-size: 1.2rem;
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
 }
 #link1 ol{
     list-style-type: none;
@@ -969,6 +992,7 @@ header{
     font-size: 1.2rem;
     margin-top: 30px;
     margin-bottom: 10px;
+    margin-left: 30px;
 }
 #service ol{
     list-style-type: none;
@@ -997,6 +1021,8 @@ header{
     font-size: 1.2rem;
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
+
 }
 #contact #d1, #d2, #d3, #d4{
     display: flex;
@@ -1058,7 +1084,19 @@ header{
         flex-direction: column;
     }
     #follow{
+        width: 100%;
+    }
+    #follow ol{
         margin: auto;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+    #follow ol li{
+    text-align: center;
+    margin-left: 0;
+
     }
     #form1{
         margin: auto;
