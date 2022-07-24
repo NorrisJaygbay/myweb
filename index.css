@@ -147,7 +147,6 @@ header{
     top: 0;
     z-index: 999;
     border-top: 1px solid #03A9F4;
-    /* border-bottom: 4px solid #03A9F4; */
     box-shadow: 0px 3px 15px rgba(3, 169,244,.5);
 }
 .navbar{
@@ -215,9 +214,6 @@ header{
 .nav-menu li a:hover{
     color: #03A9F4;
 }
-.nav-menu li:hover{
-    /* border-bottom: 1px dotted blue; */
-}
 .hamburger{
     display: none;
     cursor: pointer;
@@ -235,13 +231,11 @@ header{
 }
 /* for the pupup I.T. courses */
 .itcourses{
-    /* position: absolute; */
     position: fixed;
     z-index: 999;
     width: 100%;
     display: none;
     justify-content: center;
-    /* top: 0; */
 }
 .itcourses1{
     width: 30%;
@@ -285,7 +279,6 @@ header{
     cursor: pointer;
 }
 /* for the pupup I.T. courses ends here */
-
 /* @media for I.T.courses */
 @media all and (max-width:840px){
     .itcourses1{
@@ -313,10 +306,8 @@ header{
     }
 }
 /* @media for I.T.courses ends here*/
-
 /* for the pupup business courses */
 .business{
-    /* position: absolute; */
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -337,10 +328,7 @@ header{
 }
 .business1 ul li:before{
     content: "\27A4";
-    /* color: red; */
     margin-right: 5px;
-    /* left: 10px;
-    top: 20; */
 }
 .business1 ul li{
     padding: 5px;
@@ -369,7 +357,6 @@ header{
     cursor: pointer;
 }
 /* for the pupup business courses ends here */
-
 /* @media for business courses */
 @media all and (max-width:840px){
     .business1{
@@ -397,7 +384,6 @@ header{
     }
 }
 /* @media for business courses ends here*/
-
 /* @media for second nav */
 @media all and (max-width:1025px){
     .hamburger{
@@ -502,7 +488,6 @@ header{
 .p2{
     font-size: 3rem;
     font-weight: 900;
-    /* color: #03A9F4; */
     background-image: linear-gradient(to right, rgba(0,0,255,1),rgba(3,169,244,1),rgba(0,0,255,1));
     color: transparent;
     -webkit-background-clip: text;
@@ -510,15 +495,6 @@ header{
     letter-spacing: 5px;
     margin-bottom: -32px;
     margin-top: -32px;
-    /* animation: fade 5s infinite alternate; */
-}
-@keyframes fade{
-    10%{
-        opacity: 1;
-    }
-    100%{
-        opacity: .1;
-    }
 }
 .p3{
     font-size: 2rem;
@@ -771,6 +747,115 @@ header{
     display: flex;
 }
 /* .main3 ends here */
+/* .main4 */
+.main4{
+    margin-top: 100px;
+}
+#p10{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -80px;
+    margin-bottom: 70px;
+    padding: 0 10px;
+}
+#p11, #p12{
+    text-align: center;
+    padding: 0 40px;
+}
+#p11{
+    margin-top: -70px;
+}
+#p12{
+    margin-top: -17px;
+    margin-bottom: 50px;
+}
+#p13{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: blue;
+}
+.main41{
+    display: flex;
+}
+.main42{
+    width: 50%;
+    display: flex;
+}
+.main43{
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+    background: whitesmoke;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9);
+}
+#studentimg{
+    border-radius: 50%;
+    background: rgba(0,136,204,1);
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.9);
+    margin-top: -50px;
+}
+#main4ma{
+    margin-bottom: 10px;
+}
+#main4ma1{
+    margin-bottom: 10px;
+}
+/* .main4 ends here */
+/* @media for .main4 */
+@media all and (max-width:950px){
+    .main41{
+        flex-direction: column;
+    }
+    .main42{
+        width: 90%;
+        margin:auto;
+    }
+    #main42same{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #main4ma1{
+        margin-bottom: 10px;
+        margin-top: 45px;
+    }
+    #norr{
+        margin-left: 0;
+    }
+}
+@media all and (max-width:650px){
+    .main42{
+        flex-direction: column;
+    }
+    .main43{
+        width: 80%;
+        margin: auto;
+    }
+    #firstmain4{
+        margin-bottom: 55px !important;
+        margin: auto;
+    }
+    #norr{
+        margin:auto;
+        margin-top: 55px;
+    }
+}
+@media all and (max-width:450px){
+    .main43{
+        width: 90%;
+    }
+    #p10{
+        font-size: 1.8rem;
+    }
+}
+@media all and (max-width:330px){
+    #p10{
+        font-size: 1.6rem;
+    }
+}
+/* end of @media for .main4 */
 /* footer */
 #footer{
     background: black;
