@@ -873,6 +873,143 @@ header{
     }
 }
 /* end of @media for .main4 */
+/* .main5 */
+.main5{
+    /* width: 100%; */
+    /* overflow: auto; */
+    /* border: 2px solid red; */
+}
+.main5control{
+    display: flex;
+    align-items: center;
+}
+.main56{
+    position: relative;
+    background: transparent;
+    /* border: 2px solid red; */
+
+}
+.bleft, .bright{
+    background: transparent;
+    cursor: pointer;
+    height: 100px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: blue;
+    border: none;
+    outline: none;
+}
+.bleft:hover{
+    color: #03A9F4;
+}
+.bright{
+    background: transparent;
+    cursor: pointer;
+}
+.bright:hover{
+    color: #03A9F4;
+}
+#p14{
+    text-align: center;
+    /* border: 2px solid black; */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: -3px;
+    margin-top: 20px;
+    color: blue;
+}
+#p15{
+    /* border: 2px solid black; */
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: -14px;
+}
+#p16{
+    /* border: 2px solid black; */
+}
+#span4{
+    border-bottom: 4px solid #03A9F4;
+}
+.main5img{
+    width:90%; 
+    height:220px;
+    cursor: pointer;
+    transition: .5s ease;
+    transform: scale(1);
+}
+/* .main5img:active{
+    cursor: pointer;
+    transition: .5s ease;
+    transform: scale(1.2);
+} */
+.main5img:hover{
+    cursor: pointer;
+    transition: .5s ease;
+    transform: scale(1.2);
+}
+.main51{
+    display: flex;
+    /* border: 2px solid green; */
+    padding-right: 10px;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    /* width: 80%; */
+}
+.main51::-webkit-scrollbar{
+    display: none;
+    scroll-behavior: smooth;
+    /* background: #03A9F4; */
+}
+.main52{
+    min-width: 24%;
+    max-width: 25%;
+    background: whitesmoke;
+    padding-top: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin: 0 10px;
+}
+.main53{
+    margin-left: 0;
+    margin-right: 0;
+}
+.main54{
+    margin-right: 0;
+}
+.main55{
+    margin-right: 0;
+}
+/* @media for .main5 */
+@media all and (max-width:950px){
+    .main52{
+        min-width: 48%;
+        max-width: 25%;
+        text-align: center;
+        margin: 0 10px;
+    }
+    .main51{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+@media all and (max-width:650px){
+    .main52{
+        min-width: 95%;
+        max-width: 25%;
+        /* border: 2px solid black; */
+        text-align: center;
+        margin: 0 10px;
+    }
+    /* .main51{
+        padding-left: 65px;
+        padding-right: 65px;
+    } */
+}
+/* end of @media for .main5 */
+/* .main5 ends here */
 /* footer */
 #footer{
     background: black;

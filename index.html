@@ -328,6 +328,61 @@
         </div> -->
     </div>
     <!-- .main4 ends here -->
+    <!-- .main5 -->
+        <div class="main5">
+            <p id="p14"><span id="span4">Mee</span>t our qualified Staffs</p>
+            <div class="main5control">
+                <div class="main56">
+                    <button class="bleft" onclick="left()">&#10094;</button>
+                </div>
+                <div class="main51">
+                    <div class="main52">
+                        <img src="norris.png" alt="" class="main5img">
+                        <p id="p15">Staffer Name</p>
+                        <p id="p16">Staffer Position</p>
+                    </div>
+                    <div class="main52 main53">
+                        <img src="ousmar.png" alt="" class="main5img">
+                        <p id="p15">Staffer Name</p>
+                        <p id="p16">Staffer Position</p>
+                    </div>
+                    <div class="main52 main54">
+                        <img src="oooo.jpg" alt="" class="main5img">
+                        <p id="p15">Staffer Name</p>
+                        <p id="p16">Staffer Position</p>
+                    </div>
+                    <div class="main52 main55">
+                        <img src="ooooo.jpg" alt="" class="main5img">
+                        <p id="p15">Staffer Name</p>
+                        <p id="p16">Staffer Position</p>
+                    </div>
+                    <div class="main52">
+                        <img src="ousmar.png" alt="" class="main5img">
+                        <p id="p15">Staffer Name</p>
+                        <p id="p16">Staffer Position</p>
+                    </div>
+                    <div class="main52 main53">
+                        <img src="ousmar.png" alt="" class="main5img">
+                        <p id="p15">Staffer Name</p>
+                        <p id="p16">Staffer Position</p>
+                    </div>
+                    <div class="main52 main54">
+                        <img src="ousmar.png" alt="" class="main5img">
+                        <p id="p15">Staffer Name</p>
+                        <p id="p16">Staffer Position</p>
+                    </div>
+                    <div class="main52 main55">
+                        <img src="ousmar.png" alt="" class="main5img">
+                        <p id="p15">Staffer Name</p>
+                        <p id="p16">Staffer Position</p>
+                    </div>
+                </div>
+                <div class="main56">
+                    <button class="bright" onclick="right()">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    <!-- .main5 ends here -->
      <!-- for footer -->
     <div id="footer">
         <div id="fo1">
@@ -460,7 +515,14 @@
         // for auto scroll up button
         const up = () => window.scrollTo({top:0, behavior: 'smooth'});   
         // for auto scroll up button ends here
-
+        function left(){
+            var leftt=document.querySelector(".main51");
+            leftt.scrollBy(340, 20);
+        }
+        function right(){
+            var rightt=document.querySelector(".main51");
+            rightt.scrollBy(-340, 20);
+        }
 
 
     </script>
