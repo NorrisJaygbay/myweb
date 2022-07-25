@@ -875,9 +875,7 @@ header{
 /* end of @media for .main4 */
 /* .main5 */
 .main5{
-    /* width: 100%; */
-    /* overflow: auto; */
-    /* border: 2px solid red; */
+  
 }
 .main5control{
     display: flex;
@@ -886,8 +884,6 @@ header{
 .main56{
     position: relative;
     background: transparent;
-    /* border: 2px solid red; */
-
 }
 .bleft, .bright{
     background: transparent;
@@ -911,22 +907,18 @@ header{
 }
 #p14{
     text-align: center;
-    /* border: 2px solid black; */
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: -3px;
     margin-top: 20px;
+    padding: 0 10px;
     color: blue;
 }
 #p15{
-    /* border: 2px solid black; */
     font-size: 1.3rem;
     font-weight: bold;
     color: blue;
     margin-bottom: -14px;
-}
-#p16{
-    /* border: 2px solid black; */
 }
 #span4{
     border-bottom: 4px solid #03A9F4;
@@ -938,11 +930,6 @@ header{
     transition: .5s ease;
     transform: scale(1);
 }
-/* .main5img:active{
-    cursor: pointer;
-    transition: .5s ease;
-    transform: scale(1.2);
-} */
 .main5img:hover{
     cursor: pointer;
     transition: .5s ease;
@@ -950,18 +937,15 @@ header{
 }
 .main51{
     display: flex;
-    /* border: 2px solid green; */
     padding-right: 10px;
     padding-top: 19px;
     padding-bottom: 20px;
     overflow: auto;
     scroll-behavior: smooth;
-    /* width: 80%; */
 }
 .main51::-webkit-scrollbar{
     display: none;
     scroll-behavior: smooth;
-    /* background: #03A9F4; */
 }
 .main52{
     min-width: 24%;
@@ -991,22 +975,41 @@ header{
         margin: 0 10px;
     }
     .main51{
-        padding-left: 45px;
-        padding-right: 45px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 @media all and (max-width:650px){
     .main52{
         min-width: 95%;
         max-width: 25%;
-        /* border: 2px solid black; */
         text-align: center;
         margin: 0 10px;
     }
-    /* .main51{
-        padding-left: 65px;
-        padding-right: 65px;
-    } */
+    .main5img{
+        width:70%; 
+    }
+}
+@media all and (max-width:450px){
+    .main51{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main52{
+        min-width: 300px;
+        text-align: center;
+        margin: 0 10px;
+    }
+}
+@media all and (max-width:410px){
+    #p14{
+        font-size: 1.6rem;
+    }
+}
+@media all and (max-width:330px){
+    #p14{
+        font-size: 1.2rem;
+    }
 }
 /* end of @media for .main5 */
 /* .main5 ends here */
