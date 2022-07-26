@@ -794,7 +794,7 @@ header{
     align-items: center;
     margin-top: -45px;
     margin-bottom: -20px;
-    padding-right: 10px;
+    
 }
 #main4nor{
     margin-left: 0;
@@ -856,9 +856,20 @@ header{
         max-width: 25%;
     }
 }
+@media all and (max-width:470px){
+    .main41{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
 @media all and (max-width:450px){
     #p10{
         font-size: 1.8rem;
+    }
+}
+@media all and (max-width:400px){
+    .main43{
+        min-width: 22%;
     }
 }
 @media all and (max-width:330px){
@@ -922,7 +933,6 @@ header{
     cursor: pointer;
     transition: .5s ease;
     transform: scale(1);
-    border-radius: 40px;
 }
 .main5img:hover{
     cursor: pointer;
