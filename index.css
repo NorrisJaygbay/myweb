@@ -313,7 +313,6 @@ header{
     width: 100%;
     display: none;
     justify-content: center;
-
 }
 .business1{
     width: 30%;
@@ -484,7 +483,6 @@ header{
     padding-top: 40px;
     padding-left: 5px;
     padding-right: 5px;
-
 }
 /* .maincontro ends here */
 /* main */
@@ -770,7 +768,7 @@ header{
 }
 #p10{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-top: -80px;
     margin-bottom: 70px;
@@ -785,28 +783,47 @@ header{
 }
 #p12{
     margin-top: -17px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 }
 #p13{
     font-size: 1.2rem;
     font-weight: bold;
     color: blue;
 }
+.main45{
+    align-items: center;
+    margin-top: -45px;
+    margin-bottom: -20px;
+    padding-right: 10px;
+}
+#main4nor{
+    margin-left: 0;
+}
 .main41{
     display: flex;
+    overflow: auto;
+    padding-top: 60px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+.main41::-webkit-scrollbar{
+    display: none;
 }
 .main42{
-    width: 50%;
     display: flex;
 }
 .main43{
-    width: 50%;
+    min-width: 23%;
     margin-right: 10px;
     margin-left: 10px;
     padding: 10px;
     text-align: center;
-    background: whitesmoke;
+    background: rgba(3, 169,244,.4);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9);
+}
+#firstmain4{
+    margin-left: 0;
 }
 #studentimg{
     border-radius: 50%;
@@ -820,49 +837,26 @@ header{
 #main4ma1{
     margin-bottom: 10px;
 }
+#main4two{
+    margin-left: 0;
+    margin-right: 0;
+}
+#main4two1{
+    margin-left: 0;
+}
 /* .main4 ends here */
 /* @media for .main4 */
 @media all and (max-width:950px){
     .main41{
-        flex-direction: column;
-    }
-    .main42{
-        width: 90%;
-        margin:auto;
-    }
-    #main42same{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    #main4ma1{
-        margin-bottom: 10px;
-        margin-top: 45px;
-    }
-    #norr{
-        margin-left: 0;
-    }
-}
-@media all and (max-width:650px){
-    .main42{
-        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .main43{
-        width: 80%;
-        margin: auto;
-    }
-    #firstmain4{
-        margin-bottom: 55px !important;
-        margin: auto;
-    }
-    #norr{
-        margin:auto;
-        margin-top: 55px;
+        min-width: 35%;
+        max-width: 25%;
     }
 }
 @media all and (max-width:450px){
-    .main43{
-        width: 90%;
-    }
     #p10{
         font-size: 1.8rem;
     }
@@ -889,8 +883,7 @@ header{
     background: transparent;
     cursor: pointer;
     height: 100px;
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2.5rem;
     color: blue;
     border: none;
     outline: none;
@@ -907,7 +900,7 @@ header{
 }
 #p14{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: -3px;
     margin-top: 20px;
@@ -929,6 +922,7 @@ header{
     cursor: pointer;
     transition: .5s ease;
     transform: scale(1);
+    border-radius: 40px;
 }
 .main5img:hover{
     cursor: pointer;
@@ -1270,13 +1264,13 @@ header{
 #up1{
     align-self: baseline;
     position: absolute;
-    right: 30px;
+    right: 20px;
 }
 #up{
-    border: 2px solid rgba(255,215,0,.5);
+    border: 2px solid blue;
     border-radius: 50%;
     padding: 5px;
-    color: rgba(255,215,0,.5);
+    color: blue;
     font-size: 20px;
     margin-top: -10px;
     background: transparent;
