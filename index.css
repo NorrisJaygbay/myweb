@@ -5,6 +5,16 @@ body{
     font-family: sans-serif;
     background: rgba(0, 0, 0, 0.2);
 }
+body::-webkit-scrollbar{
+    width: 12px;
+}
+body::-webkit-scrollbar-track{
+    background: rgba(255,255,255,.3);
+}
+body::-webkit-scrollbar-thumb{
+    background-image:linear-gradient(to top, blue,#03A9F4,blue );
+    border-radius: 50px;
+}
 #bothheader{
     position: sticky;
     top: 0;
@@ -532,6 +542,11 @@ header{
     border-bottom-right-radius: 15px;
     background: rgba(3,169,244,1);
     box-shadow: 0px 3px 40px 15px rgba(255,255,255,.3);
+    transition: 2s ease;
+}
+.p5:hover{
+    background: rgba(0,136,204,.2);
+    color: rgba(255,255,255,.8);
 }
 /* main ends here */
 /* main1 */
@@ -794,7 +809,6 @@ header{
     align-items: center;
     margin-top: -45px;
     margin-bottom: -20px;
-    
 }
 #main4nor{
     margin-left: 0;
@@ -806,6 +820,7 @@ header{
     padding-right: 20px;
     padding-bottom: 20px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 .main41::-webkit-scrollbar{
     display: none;
